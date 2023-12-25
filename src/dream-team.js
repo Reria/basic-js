@@ -14,9 +14,6 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function createDreamTeam(members) {
-  if (!Array.isArray(members)) {
-    return false;
-  }
   let nameTeam = '';
   let arr = [];
 
@@ -39,6 +36,11 @@ function createDreamTeam(members) {
   }
   return nameTeam
 }
+
+module.exports = {
+  createDreamTeam
+};
+
 
 module.exports = {
   createDreamTeam
